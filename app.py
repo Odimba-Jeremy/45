@@ -22,8 +22,8 @@ JWT_SECRET = os.getenv('JWT_SECRET', 'hospital_jwt_secret_2024')
 JWT_EXPIRES_HOURS = 168  # 7 jours
 
 # Supabase
-SUPABASE_URL = os.getenv('SUPABASE_URL', 'https://ermqyrlxziukjtmitule.supabase.co')
-SUPABASE_KEY = os.getenv('SUPABASE_KEY', 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImVybXF5cmx4eml1a2p0bWl0dWxlIiwicm9sZSI6ImFub24iLCJpYXQiOjE3Njc2MjQ0MjUsImV4cCI6MjA4MzIwMDQyNX0.8ttPanEXxPQUTlZgnb0iY6Y0fhI4lYUxegRB6xe3JGQ')
+SUPABASE_URL = os.getenv('SUPABASE_URL')
+SUPABASE_KEY = os.getenv('SUPABASE_KEY')
 
 # Admin initial (CHANGEZ CES VALEURS EN PRODUCTION)
 ADMIN_EMAIL = os.getenv('ADMIN_EMAIL', 'admin@hospital.com')

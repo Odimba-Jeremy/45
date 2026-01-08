@@ -10,12 +10,10 @@ from dotenv import load_dotenv
 import logging
 
 # Charger les variables d'environnement
-load_dotenv()
+load_dotenv(dotenv_path="ex.env")
 
-# Configuration
 app = Flask(__name__)
-CORS(app, origins=["http://localhost:5500", "http://127.0.0.1:5500"])
-
+CORS(app, resources={r"/*": {"origins": "*"}}) #autorise toutes les origines
 # Configuration
 SECRET_KEY = os.getenv('SECRET_KEY', 'dev-secret-key')
 JWT_SECRET = os.getenv('JWT_SECRET', 'hospital_jwt_secret_2024')
